@@ -51,7 +51,7 @@
               <div class="cc-profile-image"><a href="#"><img src="images/photo_profil.jpg" alt="Image"/></a></div>
               <div class="h2 title" style="color: #FFF;">Muhammad Naufal Hamdani</div>
               <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
-              <a class="btn btn-primary" href="images/portfolio/resume-indonesia.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+              <a class="btn btn-primary" target="_blank" href="images/portfolio/resume-indonesia.pdf" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
               
             </div>
           </div>
@@ -74,8 +74,7 @@
             <div class="col-lg-6 col-md-12">
               <div class="card-body">
                 <div class="h4 mt-0 title">About</div>
-                <p>I am a Diploma 3 graduate majoring in informatics management. After graduation, I worked as an android application developer with a history of working in companies, I am very interested in the development of mobile technology and android application development. With enthusiasm and high curiosity, I am interested in learning various things and turning ideas into products that I implement in the projects I work on.</p>
-                <p>So I'm sure I can give my best. Become a professional in a company that offers a positive atmosphere for the exploration of technology and its application for greater benefits to society and the world.</p>
+                <p>Hello! I am a Mobile Apps Developer. I have experience in developing applications for Android, iOS, and API platforms. I enjoy creating user-friendly applications with intuitive interface design and optimal performance. I believe that mobile app development is a technology that will always be utilized in the future, and I am passionate about continuously learning and growing in this field.</p>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -86,20 +85,28 @@
                   <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
                   <div class="col-sm-8">
                     <script>
-                      var dob = new Date("09/09/1996");  
-                      //calculate month difference from current date in time  
-                      var month_diff = Date.now() - dob.getTime();  
-                        
-                      //convert the calculated difference in date format  
-                      var age_dt = new Date(month_diff);   
-                        
-                      //extract year from date      
-                      var year = age_dt.getUTCFullYear();  
-                        
-                      //now calculate the age of the user  
-                      var age = Math.abs(year - 1970);  
-                        
-                      document.write( age + " years" );
+                      const date = "1996-09-09"
+                      const [year, month] = date.split("-");
+
+                      // Get the current year and month
+                      const currentYear = new Date().getFullYear();
+                      const currentMonth = new Date().getMonth() + 1; // months are 0-indexed in JavaScript
+
+                      // Calculate the difference in years and months
+                      let ageYears = currentYear - Number(year);
+                      let ageMonths = currentMonth - Number(month);
+
+                      // If the age in months is negative, subtract 1 from the age in years and add 12 to the age in months
+                      if (ageMonths < 0) {
+                        ageYears -= 1;
+                        ageMonths += 12;
+                      }
+
+                      // Return the age in years and months as a string
+                      const age = `${ageYears ? `${ageYears} Year${ageYears > 1 ? `s` : ""}` : ""} ${
+                        ageMonths ? `${ageMonths} Month${ageMonths > 1 ? "s" : ""}` : ""
+                      }`;
+                      document.write( age );
                     </script>
                   </div>
                 </div>
@@ -143,7 +150,7 @@
             <div class="row">
               
               <div class="col-md-6">
-                <div class="progress-container progress-primary"><span class="progress-badge">Android Developer</span>
+                <div class="progress-container progress-primary"><span class="progress-badge">Mobile Developer (Android & iOS)</span>
                   <div class="progress">
                     <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
                   </div>
@@ -325,6 +332,19 @@
           </div>
         </div>
 
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6"><a href="../images/portfolio/port-10b.png" target="_blank"><img class="img-fluid" src="images/portfolio/port-9b.png" width="800" height="500"/></a></div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <p class="text-teal text-small">Flutter</p>
+                <h3>Deka Portal</h3>
+                <p class="text-muted">This application is made for enterprise users. An application that contains access rights for data approval in every application or server that exists. This application is made with a team using flutter and can be used for both android and iOS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <div class="section" id="experience">
@@ -335,7 +355,24 @@
           <div class="row">
             <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p>Oct 2020 - Present</p>
+                <p>Jan 2024 - Present</p>
+                <div class="h5">Mobile Apps Dev</div>
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5">PT. Dua Kelinci</div>
+                <p>Designing and creating Android and iOS based company applications, as well as APIs for data communication with PHP based servers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="row">
+            <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p>Oct 2020 - Dec 2023</p>
                 <div class="h5">Android Dev</div>
               </div>
             </div>
