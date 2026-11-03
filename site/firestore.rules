@@ -1,0 +1,18 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Proyek: publik boleh baca, tulis hanya lewat Console / Admin SDK.
+    match /projects/{doc} {
+      allow read: if true;
+      allow write: if false;
+    }
+    // Konten situs (hero, about, skills, experience, education, certificates, contact).
+    match /site-content/{doc} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

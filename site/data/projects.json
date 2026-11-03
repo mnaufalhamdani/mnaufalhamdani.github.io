@@ -1,0 +1,226 @@
+[
+    {
+        "title":  "Deka Portal",
+        "description":  "Aplikasi lintas platform (Android dan iOS) untuk pengguna internal perusahaan. Menjadi pintu persetujuan data (approval) bagi seluruh aplikasi dan server perusahaan dalam satu tempat. Dibangun dengan Flutter bersama tim.",
+        "techStack":  [
+                          "Flutter",
+                          "Dart",
+                          "GetX"
+                      ],
+        "images":  [
+                       "images/portfolio/port-10b.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "",
+        "featured":  true,
+        "order":  1
+    },
+    {
+        "title":  "Sales Force Automation (SFA)",
+        "description":  "Aplikasi Android native untuk 1000+ tenaga sales lapangan yang aktif setiap hari kerja. Fitur utama: order/canvas, visit tracking, absensi sales dengan deteksi wajah dan koordinat lokasi realtime, cek stok, retur, analisa kunjungan dan performa, serta katalog produk dan promo.",
+        "techStack":  [
+                          "Kotlin",
+                          "Android Native",
+                          "MVVM"
+                      ],
+        "images":  [
+                       "images/portfolio/port-7b.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "2020 - 2023",
+        "featured":  false,
+        "order":  2
+    },
+    {
+        "title":  "QC Incoming \u0026 Outgoing",
+        "description":  "Menggantikan pencatatan QC manual berbasis kertas dengan pencatatan digital realtime. Dipakai di 3 line produksi dengan sistem 3 shift, mencakup titik QC barang mentah masuk, proses produksi, dan barang jadi keluar pabrik.",
+        "techStack":  [
+                          "Kotlin",
+                          "Android Native",
+                          "MVVM"
+                      ],
+        "images":  [
+                       "images/portfolio/port-9b.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "2020 - 2023",
+        "featured":  false,
+        "order":  3
+    },
+    {
+        "title":  "Deka Apps",
+        "description":  "Aplikasi karyawan untuk data kehadiran dan pelatihan online, dengan materi yang dapat diatur per divisi atau untuk semua divisi.",
+        "techStack":  [
+                          "Kotlin",
+                          "Android Native"
+                      ],
+        "images":  [
+                       "images/portfolio/port-8b.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "",
+        "featured":  false,
+        "order":  4
+    },
+    {
+        "title":  "Retail Order App",
+        "description":  "Aplikasi order untuk toko retail/kelontong ke distributor. Terintegrasi realtime dengan aplikasi SFA, mencakup manajemen stok dan laporan penjualan.",
+        "techStack":  [
+                          "Flutter",
+                          "Dart"
+                      ],
+        "images":  [
+
+                   ],
+        "category":  "Enterprise",
+        "period":  "2024 - Sekarang",
+        "featured":  false,
+        "order":  5
+    },
+    {
+        "title":  "Helpdesk \u0026 Perizinan Karyawan",
+        "description":  "Aplikasi helpdesk untuk pelaporan masalah lintas area perusahaan, serta aplikasi perizinan dan absensi karyawan yang terintegrasi dengan HRIS. Total pengguna 1400+.",
+        "techStack":  [
+                          "Flutter",
+                          "Dart",
+                          "HRIS Integration"
+                      ],
+        "images":  [
+
+                   ],
+        "category":  "Enterprise",
+        "period":  "2024 - Sekarang",
+        "featured":  false,
+        "order":  6
+    },
+    {
+        "title":  "ENDCaller, ENDDisplay, ENDTicketing",
+        "description":  "Tiga aplikasi Android untuk sistem antrian: pemanggil nomor antrian, layar tampilan nomor di loket, dan pengambilan nomor di instansi. Terhubung ke database MySQL dan website laporan antrian.",
+        "techStack":  [
+                          "Kotlin",
+                          "XML",
+                          "MySQL",
+                          "PHP"
+                      ],
+        "images":  [
+                       "images/portfolio/port-3.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "2018 - 2020",
+        "featured":  false,
+        "order":  7
+    },
+    {
+        "title":  "ENDClinic",
+        "description":  "Aplikasi untuk mencari dan memesan dokter secara online. Pengguna mendapat nomor antrian yang dibawa saat datang langsung ke tempat praktik. Data tersimpan di MySQL.",
+        "techStack":  [
+                          "Kotlin",
+                          "XML",
+                          "MySQL"
+                      ],
+        "images":  [
+                       "images/portfolio/port-4.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "2018 - 2020",
+        "featured":  false,
+        "order":  8
+    },
+    {
+        "title":  "Stock Inventory PP",
+        "description":  "Aplikasi Android untuk mengelola transaksi barang masuk dan keluar, dengan website laporan. Android dibangun dengan Java dan XML, website dengan PHP, JavaScript, dan CSS, terhubung ke MySQL.",
+        "techStack":  [
+                          "Java",
+                          "XML",
+                          "PHP",
+                          "JavaScript",
+                          "MySQL"
+                      ],
+        "images":  [
+                       "images/portfolio/port-5.png"
+                   ],
+        "category":  "Enterprise",
+        "period":  "",
+        "featured":  false,
+        "order":  9
+    },
+    {
+        "title":  "Parawarga - Aplikasi RT Digital",
+        "description":  "Aplikasi RT digital dengan fitur pengumuman, iuran warga, pengaduan, arisan, voting, petugas keamanan, dan fasilitas lingkungan. Tersedia di Google Play Store dan Apple App Store.",
+        "techStack":  [
+                          "Android",
+                          "iOS"
+                      ],
+        "images":  [
+
+                   ],
+        "category":  "Personal Project",
+        "period":  "",
+        "featured":  false,
+        "order":  10
+    },
+    {
+        "title":  "CatetHub - Pencatatan Keuangan Harian",
+        "description":  "Aplikasi pencatatan keuangan harian dengan laporan keuangan, pengingat tagihan, dan budget per kategori. Tersedia di Google Play Store.",
+        "techStack":  [
+                          "Android"
+                      ],
+        "images":  [
+
+                   ],
+        "category":  "Personal Project",
+        "period":  "",
+        "featured":  false,
+        "order":  11
+    },
+    {
+        "title":  "Duniawisataku",
+        "description":  "Aplikasi pemesanan paket wisata open trip atau private trip, dengan pemilihan kursi pada transportasi yang diinginkan. Tersedia di Android dan web dengan database MySQL. Dikerjakan bersama tim.",
+        "techStack":  [
+                          "Kotlin",
+                          "XML",
+                          "MySQL"
+                      ],
+        "images":  [
+                       "images/portfolio/port-6.png"
+                   ],
+        "category":  "Academic",
+        "period":  "",
+        "featured":  false,
+        "order":  12
+    },
+    {
+        "title":  "Layanan Kesehatan Kota Malang dengan Voice Recognition",
+        "description":  "Aplikasi Android untuk mencari fasilitas dan layanan kesehatan di Kota Malang serta membuat jadwal dokter, dengan input suara. Dikerjakan bersama tim memakai PHP, Java, dan XML.",
+        "techStack":  [
+                          "Java",
+                          "XML",
+                          "PHP",
+                          "MySQL"
+                      ],
+        "images":  [
+                       "images/portfolio/port-2.png"
+                   ],
+        "category":  "Academic",
+        "period":  "",
+        "featured":  false,
+        "order":  13
+    },
+    {
+        "title":  "Sistem Informasi Dinas Pariwisata Kota Batu",
+        "description":  "Website sistem informasi yang menampilkan destinasi, acara, berita, kuliner, dan budaya Kota Batu. Dikerjakan bersama tim.",
+        "techStack":  [
+                          "PHP",
+                          "HTML",
+                          "CSS",
+                          "JavaScript"
+                      ],
+        "images":  [
+                       "images/portfolio/port-1.png"
+                   ],
+        "category":  "Academic",
+        "period":  "",
+        "featured":  false,
+        "order":  14
+    }
+]
