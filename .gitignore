@@ -1,0 +1,12 @@
+# Service account key Firebase — JANGAN PERNAH masuk git
+secrets/
+*.json
+!site/data/*.json
+
+# Node.js
+node_modules/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
