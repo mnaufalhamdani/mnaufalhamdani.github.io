@@ -9,7 +9,11 @@
       "API Development",
       "Business Strategy"
     ],
-    "images": [],
+    "images": [
+        "images/portfolio/parawarga-1.png",
+        "images/portfolio/parawarga-2.png",
+        "images/portfolio/parawarga-3.png"
+    ],
     "category": "Personal Project",
     "period": "2024 - Sekarang",
     "featured": false,
@@ -23,7 +27,11 @@
       "Android Native",
       "MVVM"
     ],
-    "images": [],
+    "images": [
+        "images/portfolio/catethub-1.png",
+        "images/portfolio/catethub-2.png",
+        "images/portfolio/catethub-3.png"
+    ],
     "category": "Personal Project",
     "period": "2026",
     "featured": false,
@@ -41,7 +49,9 @@
       "Git"
     ],
     "images": [
-      "images/portfolio/port-7b.png"
+      "images/portfolio/sfa-1.png",
+      "images/portfolio/sfa-2.png",
+      "images/portfolio/sfa-3.png"
     ],
     "category": "Enterprise",
     "period": "2020 - Sekarang",
@@ -60,7 +70,9 @@
       "Git"
     ],
     "images": [
-      "images/portfolio/port-9b.png"
+      "images/portfolio/qc-1.png",
+      "images/portfolio/qc-2.png",
+      "images/portfolio/qc-3.png"
     ],
     "category": "Enterprise",
     "period": "2022 - Sekarang",
@@ -80,7 +92,9 @@
       "Git"
     ],
     "images": [
-      "images/portfolio/port-8b.png"
+      "images/portfolio/dkapps-1.png",
+      "images/portfolio/dkapps-2.png",
+      "images/portfolio/dkapps-3.png"
     ],
     "category": "Enterprise",
     "period": "2024 - Sekarang",
@@ -98,7 +112,11 @@
       "MySQL",
       "Git"
     ],
-    "images": [],
+    "images": [
+        "images/portfolio/retail-1.png",
+        "images/portfolio/retail-2.png",
+        "images/portfolio/retail-3.png"
+    ],
     "category": "Enterprise",
     "period": "2026 - Sekarang",
     "featured": false,
@@ -114,7 +132,10 @@
       "PHP"
     ],
     "images": [
-      "images/portfolio/port-3.png"
+      "images/portfolio/antrian-1.png",
+      "images/portfolio/antrian-2.png",
+      "images/portfolio/antrian-3.png",
+      "images/portfolio/antrian-4.png"
     ],
     "category": "Enterprise",
     "period": "2018 - 2020",
@@ -132,9 +153,11 @@
       "Git"
     ],
     "images": [
-      "images/portfolio/port-6.png"
+        "images/portfolio/duniawisata-1.png",
+        "images/portfolio/duniawisata-2.png",
+        "images/portfolio/duniawisata-3.png"
     ],
-    "category": "Academic",
+    "category": "Enterprise",
     "period": "2019 - 2020",
     "featured": false,
     "order": 12
@@ -149,7 +172,9 @@
       "API Development"
     ],
     "images": [
-      "images/portfolio/port-2.png"
+        "images/portfolio/yankes-1.png",
+        "images/portfolio/yankes-2.png",
+        "images/portfolio/yankes-3.png"
     ],
     "category": "Academic",
     "period": "2018",
@@ -165,7 +190,7 @@
       "MySQL"
     ],
     "images": [
-      "images/portfolio/port-1.png"
+      "images/portfolio/disparta-1.png"
     ],
     "category": "Academic",
     "period": "2018",

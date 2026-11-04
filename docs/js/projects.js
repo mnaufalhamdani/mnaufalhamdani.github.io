@@ -42,10 +42,15 @@ function mediaHtml(p) {
   const imgs = (Array.isArray(p.images) ? p.images : []).map(safeImage).filter(Boolean);
   if (imgs.length === 0) return `<div class="project-placeholder"><i class="bi bi-phone"></i></div>`;
   const alt = (i) => `Tampilan ${esc(p.title)}${imgs.length > 1 ? ` (${i + 1} dari ${imgs.length})` : ""}`;
-  if (imgs.length === 1) return `<img src="${esc(imgs[0])}" alt="${alt(0)}" loading="lazy" />`;
+  // Gambar dibungkus <a target="_blank">: klik, Enter, dan "buka di tab baru" bawaan browser bekerja native,
+  // dan browser tidak menganggap swipe/scroll sebagai klik.
+  const link = (src, inner, extra = "") =>
+    `<a class="media-link" href="${esc(src)}" target="_blank" rel="noopener" title="Buka gambar di tab baru" draggable="false" ${extra}>${inner}</a>`;
+  if (imgs.length === 1) return link(imgs[0], `<img src="${esc(imgs[0])}" alt="${alt(0)}" loading="lazy" />`);
 
+  // Di carousel, tautan tidak masuk urutan Tab; Enter pada carousel membuka gambar aktif (lihat initCarousels).
   const slides = imgs
-    .map((src, i) => `<div class="carousel-slide"><img src="${esc(src)}" alt="${alt(i)}" ${i ? 'loading="lazy"' : ""} draggable="false" /></div>`)
+    .map((src, i) => `<div class="carousel-slide">${link(src, `<img src="${esc(src)}" alt="${alt(i)}" ${i ? 'loading="lazy"' : ""} draggable="false" />`, 'tabindex="-1"')}</div>`)
     .join("");
   const dots = imgs
     .map((_, i) => `<button type="button" class="carousel-dot${i === 0 ? " active" : ""}" data-index="${i}" aria-label="Gambar ${i + 1}"></button>`)
@@ -98,6 +103,12 @@ function initCarousels(grid) {
 
   grid.addEventListener("keydown", (e) => {
     const carousel = e.target.closest?.(".carousel");
+    if (carousel && e.target === carousel && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      const link = carousel.querySelectorAll(".media-link")[current(carousel)];
+      if (link) window.open(link.href, "_blank", "noopener");
+      return;
+    }
     if (!carousel || (e.key !== "ArrowLeft" && e.key !== "ArrowRight")) return;
     e.preventDefault();
     go(carousel, current(carousel) + (e.key === "ArrowRight" ? 1 : -1));
