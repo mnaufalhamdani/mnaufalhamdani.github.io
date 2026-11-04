@@ -4,6 +4,8 @@ Situs portofolio pribadi Muhammad Naufal Hamdani.
 
 ## Daftar Isi
 
+- [mnaufalhamdani.github.io](#mnaufalhamdanigithubio)
+  - [Daftar Isi](#daftar-isi)
 - [Bagian 1: Gambaran Repo](#bagian-1-gambaran-repo)
   - [Struktur folder](#struktur-folder)
   - [Sumber data](#sumber-data)
@@ -25,10 +27,10 @@ Situs portofolio ini dibangun dengan HTML, CSS, dan JavaScript vanilla. Tidak me
 
 ## Struktur folder
 
-Seluruh isi website yang dipublish ada di folder `site/`.
+Seluruh isi website yang dipublish ada di folder `docs/`.
 
 ```
-site/
+docs/
 ├── index.html            Halaman utama (satu halaman)
 ├── favicon.png
 ├── css/
@@ -51,12 +53,12 @@ site/
 └── README.md             Dokumentasi skema data Firestore
 ```
 
-Detail skema field koleksi `projects` dan `site-content` ada di [`site/README.md`](site/README.md).
+Detail skema field koleksi `projects` dan `site-content` ada di [`docs/README.md`](docs/README.md).
 
 ## Sumber data
 
-- **Proyek portofolio** diambil dari Firestore, collection `projects`. Jika Firestore gagal atau belum dikonfigurasi, situs memakai `site/data/projects.json`.
-- **Konten section** (hero, about, skills, experience, dll.) diambil dari collection `site-content`, dengan fallback ke `site/data/site-content.json`.
+- **Proyek portofolio** diambil dari Firestore, collection `projects`. Jika Firestore gagal atau belum dikonfigurasi, situs memakai `docs/data/projects.json`.
+- **Konten section** (hero, about, skills, experience, dll.) diambil dari collection `site-content`, dengan fallback ke `docs/data/site-content.json`.
 
 ## Menjalankan situs secara lokal
 
@@ -78,7 +80,7 @@ npx serve site
 
 # Bagian 2: Setup Tools (Seed Firestore)
 
-`site/tools/seed.mjs` adalah script lokal yang mengisi Firestore dari file JSON di `site/data/`. Bagian ini mengasumsikan repo baru saja di-clone dan komputer belum punya `node_modules/` atau kredensial apa pun.
+`docs/tools/seed.mjs` adalah script lokal yang mengisi Firestore dari file JSON di `docs/data/`. Bagian ini mengasumsikan repo baru saja di-clone dan komputer belum punya `node_modules/` atau kredensial apa pun.
 
 File berikut sengaja **tidak ada di repo** (diatur lewat `.gitignore`) karena hanya dipakai sebagai tools lokal, bukan bagian dari website:
 
@@ -110,14 +112,14 @@ Karena `package.json` tidak ada di repo, jangan memakai `npm install` tanpa argu
 1. Buka [Firebase Console](https://console.firebase.google.com/) dan pilih project.
 2. Masuk ke **Project Settings** → tab **Service accounts**.
 3. Klik **Generate new private key**, lalu simpan file JSON yang terunduh.
-4. Simpan file itu di folder lokal **di luar `site/`** agar tidak ikut ter-deploy ke GitHub Pages. Contoh: folder `secrets/` di root repo.
+4. Simpan file itu di folder lokal **di luar `docs/`** agar tidak ikut ter-deploy ke GitHub Pages. Contoh: folder `secrets/` di root repo.
 
 ```
 secrets/
 └── nama-service-account.json
 ```
 
-> **PERINGATAN:** file ini **TIDAK BOLEH pernah masuk git atau di-commit**. Isinya kredensial admin penuh ke Firestore. `.gitignore` sudah mengabaikan `secrets/` dan `*.json` (kecuali `site/data/*.json`), tetapi tetap periksa dengan `git status` sebelum commit. Jika key pernah bocor, hapus key itu di Firebase Console dan buat yang baru.
+> **PERINGATAN:** file ini **TIDAK BOLEH pernah masuk git atau di-commit**. Isinya kredensial admin penuh ke Firestore. `.gitignore` sudah mengabaikan `secrets/` dan `*.json` (kecuali `docs/data/*.json`), tetapi tetap periksa dengan `git status` sebelum commit. Jika key pernah bocor, hapus key itu di Firebase Console dan buat yang baru.
 
 ## 4. Set environment variable
 
@@ -140,13 +142,13 @@ set GOOGLE_APPLICATION_CREDENTIALS=D:\path\ke\repo\secrets\nama-service-account.
 Dari root repo:
 
 ```
-node site/tools/seed.mjs
+node docs/tools/seed.mjs
 ```
 
 Script ini membaca:
 
-- `site/data/projects.json` lalu menulis ke collection `projects` (satu dokumen per proyek, ID dari slug judul)
-- `site/data/site-content.json` lalu menulis ke collection `site-content` (satu dokumen per section)
+- `docs/data/projects.json` lalu menulis ke collection `projects` (satu dokumen per proyek, ID dari slug judul)
+- `docs/data/site-content.json` lalu menulis ke collection `site-content` (satu dokumen per section)
 
 Penulisan memakai `batch.set()`, yang **menimpa seluruh dokumen** setiap kali dijalankan. Field yang ada di Firestore tetapi tidak ada di JSON akan hilang. Jadi jika Anda mengedit data langsung di Console, pindahkan perubahan itu ke file JSON sebelum menjalankan seed.
 
@@ -154,11 +156,11 @@ Jika berhasil, terminal menampilkan pesan seperti `Seeded N projects dan M dokum
 
 ## 6. Catatan environment variable
 
-Variable di langkah 4 hanya berlaku untuk **sesi terminal yang sedang terbuka**. Setiap kali membuka terminal baru, set ulang sebelum menjalankan `node site/tools/seed.mjs`.
+Variable di langkah 4 hanya berlaku untuk **sesi terminal yang sedang terbuka**. Setiap kali membuka terminal baru, set ulang sebelum menjalankan `node docs/tools/seed.mjs`.
 
 ## 7. Publish firestore.rules
 
-File `site/firestore.rules` mengatur akses: baca publik, tulis ditutup. Rules ini harus dipublish ke Firebase. Ada dua cara:
+File `docs/firestore.rules` mengatur akses: baca publik, tulis ditutup. Rules ini harus dipublish ke Firebase. Ada dua cara:
 
 **Cara A: Firebase CLI**
 
@@ -172,7 +174,7 @@ Cara ini membutuhkan `firebase.json` yang menunjuk ke file rules, misalnya:
 
 ```json
 {
-  "firestore": { "rules": "site/firestore.rules" }
+  "firestore": { "rules": "docs/firestore.rules" }
 }
 ```
 
@@ -181,7 +183,7 @@ dan project terpilih lewat `firebase use <project-id>`. Perhatikan bahwa `*.json
 **Cara B: Manual lewat Console**
 
 1. Buka Firebase Console → **Firestore Database** → tab **Rules**.
-2. Salin isi `site/firestore.rules` ke editor.
+2. Salin isi `docs/firestore.rules` ke editor.
 3. Klik **Publish**.
 
 Admin SDK yang dipakai `seed.mjs` tidak terikat rules, jadi seed tetap bisa menulis walaupun rules menutup tulis dari klien.

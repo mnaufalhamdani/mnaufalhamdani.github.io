@@ -9,6 +9,10 @@ export const firebaseConfig = {
   appId: "1:643546012565:web:929e693b22a85b6560b49c"
 };
 
-export const isFirebaseConfigured = !Object.values(firebaseConfig).some((v) =>
-  String(v).startsWith("YOUR_")
-);
+// Saklar sementara: true = paksa selalu pakai data/*.json, Firestore tidak disentuh.
+// Untuk mengaktifkan Firestore lagi, ubah menjadi false.
+export const FORCE_JSON_FALLBACK = true;
+
+export const isFirebaseConfigured =
+  !FORCE_JSON_FALLBACK &&
+  !Object.values(firebaseConfig).some((v) => String(v).startsWith("YOUR_"));

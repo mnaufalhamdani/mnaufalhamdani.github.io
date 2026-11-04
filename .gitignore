@@ -1,7 +1,7 @@
 # Service account key Firebase — JANGAN PERNAH masuk git
 secrets/
 *.json
-!site/data/*.json
+!docs/data/*.json
 
 # Node.js
 node_modules/
