@@ -16,6 +16,16 @@ a { color: inherit; text-decoration: none; }
 
 /* Header */
 .header { position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 20; width: min(1024px, 94%); height: 60px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; background: var(--card); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); backdrop-filter: blur(12px); }
+/* Border berputar: cincin 1px dari conic-gradient, sudutnya dianimasikan lewat @property */
+@property --header-angle { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.header::before { content: ""; position: absolute; inset: -1px; padding: 1px; border-radius: inherit; pointer-events: none;
+  background: conic-gradient(from var(--header-angle), transparent 0 55%, var(--accent2) 70%, color-mix(in srgb, var(--accent) 65%, #fff) 88%, transparent 100%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  animation: header-spin 8s linear infinite; }
+[data-theme="light"] .header::before { background: conic-gradient(from var(--header-angle), transparent 0 55%, var(--accent) 72%, var(--accent2) 90%, transparent 100%); }
+@keyframes header-spin { to { --header-angle: 360deg; } }
+@media (prefers-reduced-motion: reduce) { .header::before { animation: none; } }
 .brand { display: flex; align-items: center; gap: 8px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
 .brand-dot { width: 12px; height: 12px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent2)); }
 .nav { display: flex; gap: 22px; color: var(--muted); font-size: .95rem; }
@@ -52,7 +62,7 @@ h1 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.1; background: linear-g
 .section-title { font-size: clamp(1.6rem, 4vw, 2.2rem); margin-bottom: 36px; text-align: center; }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 24px; transition: transform .25s, border-color .25s, box-shadow .25s; }
 .card:hover { border-color: var(--accent); box-shadow: var(--shadow); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; color: var(--muted); }
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 20px; color: var(--muted); }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 36px; }
 .stat { text-align: center; }
 .stat strong { display: block; font-size: 2rem; color: var(--accent); }
@@ -123,7 +133,6 @@ ul.plain { list-style: none; padding: 0; display: grid; gap: 14px; }
   .nav { position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--card); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); overflow: hidden; max-height: 0; opacity: 0; visibility: hidden; transition: max-height .3s, opacity .3s, visibility .3s; }
   .nav.open { max-height: 420px; opacity: 1; visibility: visible; }
   .nav a { padding: 14px 20px; }
-  .about-grid { grid-template-columns: 1fr; }
   .stats { grid-template-columns: repeat(2, 1fr); }
   .project.featured { flex-direction: column; }
 }

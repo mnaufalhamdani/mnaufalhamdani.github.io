@@ -2,9 +2,9 @@
   "hero": {
     "eyebrow": "Halo, saya",
     "name": "Muhammad Naufal Hamdani",
-    "taglineRole": "Mobile Developer — Flutter & Android Native",
-    "taglineSegment": "FMCG/Manufaktur Enterprise",
-    "lead": "6+ tahun membangun aplikasi mobile untuk operasional manufaktur dan FMCG, melayani 1400+ pengguna aktif.",
+    "taglineRole": "Mobile Developer",
+    "taglineSegment": "FMCG/Manufaktur Enterprise & Smart Area Platform",
+    "lead": "6+ tahun membangun aplikasi mobile untuk sistem operasional enterprise (manufaktur, FMCG) dan smart area platform, melayani 2400+ pengguna aktif.",
     "cvLabel": "Download CV",
     "cvPath": "files/Resume_ATS_Muhammad_Naufal_Hamdani.pdf",
     "secondaryLabel": "Lihat Proyek",
@@ -13,7 +13,8 @@
   "about": {
     "paragraphs": [
       "Saya Mobile Developer (Flutter dan Android native) yang berfokus pada sistem operasional manufaktur dan FMCG skala enterprise: Sales Force Automation, quality control produksi, retail, helpdesk, dan perizinan karyawan.",
-      "Saya membangun aplikasi untuk Android dan iOS dengan Clean Architecture dan MVVM, menentukan arsitektur API yang dipakai lintas tim mobile, ERP, dan web, serta mengintegrasikan aplikasi dengan ERP dan HRIS tanpa mengubah logika inti sistem yang sudah berjalan."
+      "Saya membangun aplikasi untuk Android dan iOS dengan Clean Architecture dan MVVM, menentukan arsitektur API yang dipakai lintas tim mobile, ERP, dan web, serta mengintegrasikan aplikasi dengan ERP dan HRIS tanpa mengubah logika inti sistem yang sudah berjalan.",
+      "Di luar pekerjaan enterprise, saya juga Founder Parawarga, yaitu aplikasi RT digital untuk smart area yang tersedia di Google Play Store dan App Store, serta mengembangkan CatetHub untuk pencatatan keuangan harian."
     ],
     "stats": [
       {
