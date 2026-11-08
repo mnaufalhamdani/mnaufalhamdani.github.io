@@ -66,6 +66,13 @@ const renderers = {
       )
       .join("");
   },
+  openSource(d) {
+    $("opensource-grid").innerHTML = (d.items || [])
+      .map(
+        (o) => `<div class="card reveal"><h3><i class="bi bi-box-arrow-up-right"></i> <a href="${esc(httpsUrl(o.url))}" target="_blank" rel="noopener">${esc(o.name)}</a></h3><p class="muted">${esc(o.description)}</p></div>`
+      )
+      .join("");
+  },
   experience(d) {
     $("experience-list").innerHTML = (d.items || [])
       .map(

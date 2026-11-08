@@ -42,7 +42,7 @@ Sumber lokal sekaligus fallback: `data/site-content.json` (key = ID dokumen). Do
 | contact | intro, email, linkedin, github |
 
 ## Menjalankan lokal
-Modul ES butuh server HTTP: `npx serve site` atau `php -S localhost:8000 -t site`.
+Modul ES butuh server HTTP: `npx serve docs` atau `php -S localhost:8000 -t docs`.
 
 ## Mengaktifkan Firestore
 1. Firebase Console: buat project, tambah Web app, aktifkan Firestore.

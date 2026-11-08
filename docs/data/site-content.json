@@ -14,7 +14,7 @@
     "paragraphs": [
       "Saya Mobile Developer (Flutter dan Android native) yang berfokus pada sistem operasional manufaktur dan FMCG skala enterprise: Sales Force Automation, quality control produksi, retail, helpdesk, dan perizinan karyawan.",
       "Saya membangun aplikasi untuk Android dan iOS dengan Clean Architecture dan MVVM, menentukan arsitektur API yang dipakai lintas tim mobile, ERP, dan web, serta mengintegrasikan aplikasi dengan ERP dan HRIS tanpa mengubah logika inti sistem yang sudah berjalan.",
-      "Di luar pekerjaan enterprise, saya juga Founder Parawarga, yaitu aplikasi RT digital untuk smart area yang tersedia di Google Play Store dan App Store, serta mengembangkan CatetHub untuk pencatatan keuangan harian."
+      "Di luar pekerjaan enterprise, saya juga Founder Parawarga, yaitu aplikasi RT digital untuk smart area yang tersedia di Google Play Store dan App Store, serta mengembangkan CatetHub untuk pencatatan keuangan harian. Saya juga membangun dan mengelola sendiri server produksi Parawarga dari nol, termasuk konfigurasi Nginx, PM2 dengan load balancing, dan keamanan server."
     ],
     "stats": [
       {
@@ -22,7 +22,7 @@
         "label": "tahun pengalaman mobile"
       },
       {
-        "value": "1400+",
+        "value": "2400+",
         "label": "pengguna aktif"
       },
       {
@@ -43,8 +43,11 @@
         "items": [
           "Flutter (Dart) iOS & Android",
           "GetX",
+          "Riverpod",
           "Android Native Kotlin",
-          "Android Native Java"
+          "Android Native Java",
+          "Jetpack Compose",
+          "Hilt"
         ]
       },
       {
@@ -97,6 +100,26 @@
           "Code review",
           "Agile/Kanban"
         ]
+      },
+      {
+        "title": "CI/CD & Infrastruktur",
+        "icon": "bi-hdd-network",
+        "items": [
+          "GitLab CI",
+          "Nginx",
+          "PM2",
+          "SSL/Certbot",
+          "Linux Server Administration"
+        ]
+      },
+      {
+        "title": "AI-Assisted Development",
+        "icon": "bi-stars",
+        "items": [
+          "Claude Code",
+          "Gemini",
+          "Kiro IDE"
+        ]
       }
     ]
   },
@@ -108,8 +131,9 @@
         "period": "Januari 2024 - Sekarang",
         "bullets": [
           "Menentukan arsitektur aplikasi mobile dan API backend yang dipakai lintas tim mobile, ERP, dan web.",
+          "Merancang sistem instruksi terstruktur untuk AI coding agent dalam menjalankan automated testing lintas platform (Vue.js, PHP Yii2, Flutter, Kotlin), mencakup strategi white box/black box, navigasi aplikasi, dan pelaporan hasil.",
           "Mengembangkan aplikasi retail (Flutter) untuk order toko ke distributor, terintegrasi realtime dengan SFA, termasuk manajemen stok dan laporan penjualan.",
-          "Membangun aplikasi helpdesk serta aplikasi perizinan dan absensi karyawan (Flutter) yang terintegrasi dengan HRIS, total 1400+ pengguna.",
+          "Membangun aplikasi helpdesk serta aplikasi perizinan dan absensi karyawan (Flutter) yang terintegrasi dengan HRIS, total 2400+ pengguna.",
           "Mengintegrasikan aplikasi mobile dengan data ERP lewat API tanpa mengubah struktur atau logika inti ERP.",
           "Melakukan code review lintas tim mobile dan web sesuai standar Clean Architecture/MVVM."
         ]
@@ -139,6 +163,25 @@
         "bullets": [
           "Magang menangani pemeliharaan, perbaikan perangkat keras, serta instalasi dan konfigurasi perangkat lunak."
         ]
+      }
+    ]
+  },
+  "openSource": {
+    "items": [
+      {
+        "name": "Cores",
+        "url": "https://github.com/mnaufalhamdani/Cores",
+        "description": "Library pendukung aplikasi Kotlin dengan binding dan Dependency Injection, dipakai sebagai base architecture lintas proyek."
+      },
+      {
+        "name": "cores-backend",
+        "url": "https://www.npmjs.com/package/@mnaufalhamdani/cores-backend",
+        "description": "Package npm berisi utilitas backend umum — koneksi database, middleware, dan fungsi dinamis yang dapat dipakai ulang."
+      },
+      {
+        "name": "CustomTakePickFile",
+        "url": "https://jitpack.io/#mnaufalhamdani/CustomTakePickFile",
+        "description": "Library Kotlin untuk kamera dengan face detection, deteksi lokasi dari koordinat, rekam video, capture KTP, dan pemilihan file."
       }
     ]
   },
