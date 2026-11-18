@@ -2,9 +2,9 @@
   "hero": {
     "eyebrow": "Halo, saya",
     "name": "Muhammad Naufal Hamdani",
-    "taglineRole": "Mobile Developer",
+    "taglineRole": "Senior Software Engineer — Web & Mobile",
     "taglineSegment": "FMCG/Manufaktur Enterprise & Smart Area Platform",
-    "lead": "6+ tahun membangun aplikasi mobile untuk sistem operasional enterprise (manufaktur, FMCG) dan smart area platform, melayani 2400+ pengguna aktif.",
+    "lead": "6+ tahun membangun aplikasi internal enterprise berbasis web dan mobile untuk manufaktur, FMCG, dan smart area platform, melayani 2400+ pengguna aktif.",
     "cvLabel": "Download CV",
     "cvPath": "files/Resume_ATS_Muhammad_Naufal_Hamdani.pdf",
     "secondaryLabel": "Lihat Proyek",
@@ -12,14 +12,14 @@
   },
   "about": {
     "paragraphs": [
-      "Saya Mobile Developer (Flutter dan Android native) yang berfokus pada sistem operasional manufaktur dan FMCG skala enterprise: Sales Force Automation, quality control produksi, retail, helpdesk, dan perizinan karyawan.",
-      "Saya membangun aplikasi untuk Android dan iOS dengan Clean Architecture dan MVVM, menentukan arsitektur API yang dipakai lintas tim mobile, ERP, dan web, serta mengintegrasikan aplikasi dengan ERP dan HRIS tanpa mengubah logika inti sistem yang sudah berjalan.",
+      "Saya Senior Software Engineer dengan 6+ tahun membangun aplikasi internal enterprise berbasis web dan mobile (Flutter, Android native, PHP, Node.js) untuk manufaktur dan FMCG: Sales Force Automation, quality control produksi, retail, helpdesk, dan perizinan karyawan.",
+      "Saya menetapkan arsitektur aplikasi (Clean Architecture/MVVM), desain database (indexing, optimasi query, migrasi), automated testing, dan standar dokumentasi teknis yang dipakai lintas tim mobile, ERP, dan web, serta mengintegrasikan aplikasi dengan ERP dan HRIS tanpa mengubah logika inti sistem yang sudah berjalan. Saya juga memakai AI (Claude Code, Gemini, Kiro IDE) untuk membantu pengerjaan dan merancang workflow automated testing lintas platform.",
       "Di luar pekerjaan enterprise, saya juga Founder Parawarga, yaitu aplikasi RT digital untuk smart area yang tersedia di Google Play Store dan App Store, serta mengembangkan CatetHub untuk pencatatan keuangan harian. Saya juga membangun dan mengelola sendiri server produksi Parawarga dari nol, termasuk konfigurasi Nginx, PM2 dengan load balancing, dan keamanan server."
     ],
     "stats": [
       {
         "value": "6+",
-        "label": "tahun pengalaman mobile"
+        "label": "tahun pengalaman"
       },
       {
         "value": "2400+",
@@ -37,6 +37,17 @@
   },
   "skills": {
     "groups": [
+      {
+        "title": "Web / Backend",
+        "icon": "bi-code-slash",
+        "items": [
+          "PHP",
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+          "REST API"
+        ]
+      },
       {
         "title": "Mobile",
         "icon": "bi-phone",
@@ -63,31 +74,38 @@
         "title": "Data & Storage",
         "icon": "bi-database",
         "items": [
-          "MySql",
+          "MariaDB",
+          "MySQL",
           "SQLite",
           "Room",
+          "Desain tabel",
+          "Indexing & optimasi query",
+          "Migrasi database",
+          "Redis",
           "Retrofit",
-          "Dio",
-          "Redis"
+          "Dio"
         ]
       },
       {
         "title": "Testing & Monitoring",
         "icon": "bi-activity",
         "items": [
+          "Automated Testing (AI coding agent)",
           "Unit Testing",
+          "Widget Testing",
+          "Integration Testing",
           "Firebase Crashlytics",
           "FCM",
           "Firebase Analytics"
         ]
       },
       {
-        "title": "Web / Backend",
-        "icon": "bi-code-slash",
+        "title": "AI-Assisted Development",
+        "icon": "bi-stars",
         "items": [
-          "JavaScript",
-          "TypeScript",
-          "PHP"
+          "Claude Code",
+          "Gemini",
+          "Kiro IDE"
         ]
       },
       {
@@ -105,20 +123,12 @@
         "title": "CI/CD & Infrastruktur",
         "icon": "bi-hdd-network",
         "items": [
-          "GitLab CI",
+          "GitLab CI/CD (deployment)",
           "Nginx",
           "PM2",
           "SSL/Certbot",
+          "Security hardening",
           "Linux Server Administration"
-        ]
-      },
-      {
-        "title": "AI-Assisted Development",
-        "icon": "bi-stars",
-        "items": [
-          "Claude Code",
-          "Gemini",
-          "Kiro IDE"
         ]
       }
     ]
@@ -130,12 +140,11 @@
         "company": "PT. Dua Kelinci",
         "period": "Januari 2024 - Sekarang",
         "bullets": [
-          "Menentukan arsitektur aplikasi mobile dan API backend yang dipakai lintas tim mobile, ERP, dan web.",
-          "Merancang sistem instruksi terstruktur untuk AI coding agent dalam menjalankan automated testing lintas platform (Vue.js, PHP Yii2, Flutter, Kotlin), mencakup strategi white box/black box, navigasi aplikasi, dan pelaporan hasil.",
-          "Mengembangkan aplikasi retail (Flutter) untuk order toko ke distributor, terintegrasi realtime dengan SFA, termasuk manajemen stok dan laporan penjualan.",
-          "Membangun aplikasi helpdesk serta aplikasi perizinan dan absensi karyawan (Flutter) yang terintegrasi dengan HRIS, total 2400+ pengguna.",
-          "Mengintegrasikan aplikasi mobile dengan data ERP lewat API tanpa mengubah struktur atau logika inti ERP.",
-          "Melakukan code review lintas tim mobile dan web sesuai standar Clean Architecture/MVVM."
+          "Menetapkan arsitektur aplikasi mobile dan API backend (Clean Architecture/MVVM) beserta desain database (indexing, optimasi query, migrasi) yang dipakai lintas tim mobile, ERP, dan web, serta memeliharanya.",
+          "Merancang automated testing lintas platform (Vue.js, PHP Yii2, Flutter, Kotlin) dengan AI coding agent, lewat sistem instruksi terstruktur yang mencakup strategi white box/black box, navigasi aplikasi, dan pelaporan hasil.",
+          "Membangun DK Docs (Node.js), dokumentasi teknis terpusat tempat developer menulis alur sistem lengkap per modul, agar tim support dapat mencari dan mempelajari menu/modul secara mandiri; turut menetapkan standar Git commit message yang terhubung ke nomor CR/bug untuk keterlacakan perubahan.",
+          "Membangun aplikasi perizinan dan absensi karyawan (Flutter) terintegrasi HRIS, memangkas persetujuan izin dari 1-2 hari kerja (manual kertas) menjadi hitungan jam, serta aplikasi helpdesk pertama di perusahaan yang mencatat seluruh masalah lintas area sehingga polanya bisa dianalisis. Keduanya melayani total 1400+ pengguna.",
+          "Mengembangkan aplikasi retail (Flutter) untuk order toko retail/kelontong ke distributor, terintegrasi realtime dengan aplikasi SFA (manajemen stok dan laporan penjualan); turut mengembangkan web analisa kunjungan SFA (PHP); dan mengintegrasikan aplikasi mobile dengan data ERP melalui API tanpa mengubah logika inti ERP."
         ]
       },
       {
@@ -143,8 +152,8 @@
         "company": "PT. Dua Kelinci",
         "period": "Oktober 2020 - Desember 2023",
         "bullets": [
-          "Membangun aplikasi Sales Force Automation (Android native) untuk 1000+ sales lapangan aktif: order/canvas, visit tracking, absensi, cek stok, retur, analisa kunjungan dan performa, katalog produk/promo.",
-          "Mengembangkan aplikasi QC incoming dan outgoing (Android native) yang menggantikan pencatatan kertas dengan pencatatan digital realtime di 3 line produksi dengan 3 shift."
+          "Membangun aplikasi Sales Force Automation (Android native) untuk 1000+ tenaga sales lapangan aktif tiap hari kerja, dengan fitur order/canvas, visit tracking, absensi sales, cek stok, retur, analisa kunjungan dan performa, serta katalog produk/promo.",
+          "Mengganti pencatatan QC berbasis kertas yang direkap manual oleh kepala shift dengan aplikasi QC incoming dan outgoing (Android native) berbasis digital realtime di 3 line produksi (3 shift), mencakup titik QC barang mentah masuk dan barang jadi keluar; hasil dapat diekspor ke PDF kapan saja."
         ]
       },
       {
@@ -152,16 +161,8 @@
         "company": "CV. Nakula Sadewa",
         "period": "November 2018 - September 2020",
         "bullets": [
-          "Mengembangkan 90+ aplikasi sistem antrian dan survei kepuasan pelanggan untuk klien layanan kesehatan, perbankan, dan pemerintahan.",
-          "Membangun aplikasi kitchen order management untuk alur pesanan F&B, dari pesanan masuk, masak, packing, hingga diterima pembeli."
-        ]
-      },
-      {
-        "role": "Teknisi",
-        "company": "PT. Bio Computer Malang",
-        "period": "Oktober 2013 - Maret 2014",
-        "bullets": [
-          "Magang menangani pemeliharaan, perbaikan perangkat keras, serta instalasi dan konfigurasi perangkat lunak."
+          "Mengembangkan 90+ aplikasi sistem antrian dan survei kepuasan pelanggan (SKP) untuk klien sektor layanan kesehatan, perbankan, dan pemerintahan, beserta web laporan antrian (PHP).",
+          "Membangun aplikasi kitchen order management untuk alur pesanan F&B, mulai dari pesanan masuk, proses masak, packing, hingga diterima pembeli."
         ]
       }
     ]
@@ -202,7 +203,6 @@
   "certificates": {
     "items": [
       "Java Programming (Oracle)",
-      "Microsoft Office 2013 (Politeknik Negeri Malang)",
       "Mikrotik MTCNA (MikroTik)",
       "Kompetensi Jaringan Komputer (BNSP)"
     ]

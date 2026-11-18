@@ -1,18 +1,21 @@
 [
   {
     "title": "Parawarga - Aplikasi RT Digital",
-    "description": "Aplikasi RT digital dengan fitur pengumuman, iuran warga, pengaduan, arisan, voting, petugas keamanan, dan fasilitas lingkungan. Tersedia di Google Play Store dan Apple App Store.",
+    "description": "Aplikasi RT digital dengan fitur pengumuman, iuran warga, pengaduan, arisan, voting, petugas keamanan, dan fasilitas lingkungan. Backend memakai cores-backend dan MariaDB, dengan server produksi yang dibangun dan dikelola sendiri; landing page dan backoffice dibangun dengan Node.js. Tersedia di Google Play Store dan Apple App Store.",
     "techStack": [
       "Flutter",
       "iOS Development",
       "Android Development",
+      "Node.js",
+      "MariaDB",
+      "Redis",
       "API Development",
       "Business Strategy"
     ],
     "images": [
-        "images/portfolio/parawarga-1.png",
-        "images/portfolio/parawarga-2.png",
-        "images/portfolio/parawarga-3.png"
+      "images/portfolio/parawarga-1.png",
+      "images/portfolio/parawarga-2.png",
+      "images/portfolio/parawarga-3.png"
     ],
     "category": "Personal Project",
     "period": "2024 - Sekarang",
@@ -25,12 +28,14 @@
     "techStack": [
       "Kotlin",
       "Android Native",
+      "Jetpack Compose",
+      "Hilt",
       "MVVM"
     ],
     "images": [
-        "images/portfolio/catethub-1.png",
-        "images/portfolio/catethub-2.png",
-        "images/portfolio/catethub-3.png"
+      "images/portfolio/catethub-1.png",
+      "images/portfolio/catethub-2.png",
+      "images/portfolio/catethub-3.png"
     ],
     "category": "Personal Project",
     "period": "2026 - Sekarang",
@@ -39,11 +44,12 @@
   },
   {
     "title": "Sales Force Automation (SFA)",
-    "description": "Aplikasi Android native untuk 1000+ tenaga sales lapangan yang aktif setiap hari kerja. Fitur utama: order/canvas, visit tracking, absensi sales dengan deteksi wajah dan koordinat lokasi realtime, cek stok, retur, analisa kunjungan dan performa, serta katalog produk dan promo.",
+    "description": "Aplikasi Android native untuk 1000+ tenaga sales lapangan yang aktif setiap hari kerja. Fitur utama: order/canvas, visit tracking, absensi sales dengan deteksi wajah dan koordinat lokasi realtime, cek stok, retur, analisa kunjungan dan performa, serta katalog produk dan promo. Dilengkapi web analisa kunjungan (PHP) yang dikembangkan bersama tim.",
     "techStack": [
       "Kotlin",
       "Android Native",
       "MVVM",
+      "PHP",
       "MySQL",
       "API Development",
       "Git"
@@ -60,7 +66,7 @@
   },
   {
     "title": "QC Apps",
-    "description": "Aplikasi berbasis Android untuk mengelola alur quality control di pabrik — mulai dari pencatatan barang masuk, proses produksi, hingga barang selesai dan keluar dari pabrik. Terintegrasi dengan database MySQL dan dashboard web sebagai laporan.",
+    "description": "Aplikasi berbasis Android untuk mengelola alur quality control di pabrik, mulai dari pencatatan barang masuk, proses produksi, hingga barang selesai dan keluar dari pabrik. Menggantikan pencatatan kertas yang direkap manual oleh kepala shift dengan pencatatan digital realtime di 3 line produksi (3 shift), hasilnya bisa diekspor ke PDF kapan saja. Terintegrasi dengan database MySQL dan dashboard web sebagai laporan.",
     "techStack": [
       "Kotlin",
       "Android Native",
@@ -81,7 +87,7 @@
   },
   {
     "title": "DK Apps",
-    "description": "Aplikasi enterprise untuk kebutuhan internal perusahaan — mencakup pelaporan masalah, perizinan karyawan, dan modul training online yang bisa diakses seluruh divisi. Dilengkapi fitur push notification untuk mempercepat informasi ke karyawan.",
+    "description": "Aplikasi enterprise untuk kebutuhan internal perusahaan, mencakup pelaporan masalah (helpdesk), perizinan karyawan, dan modul training online yang bisa diakses seluruh divisi. Perizinan yang sebelumnya manual berbasis kertas (1-2 hari kerja) kini bisa disetujui dalam hitungan jam, dan helpdesk pertama di perusahaan ini membuat seluruh masalah tercatat. Helpdesk dan perizinan melayani total 1400+ pengguna, dilengkapi push notification untuk mempercepat informasi ke karyawan.",
     "techStack": [
       "Flutter",
       "Dart",
@@ -113,9 +119,9 @@
       "Git"
     ],
     "images": [
-        "images/portfolio/retail-1.png",
-        "images/portfolio/retail-2.png",
-        "images/portfolio/retail-3.png"
+      "images/portfolio/retail-1.png",
+      "images/portfolio/retail-2.png",
+      "images/portfolio/retail-3.png"
     ],
     "category": "Enterprise",
     "period": "2026 - Sekarang",
@@ -124,7 +130,7 @@
   },
   {
     "title": "Sistem Antrian",
-    "description": "Rangkaian aplikasi sistem antrian berbasis Android untuk instansi — ENDCaller memanggil nomor antrian, ENDDisplay menampilkan nomor di layar counter, ENDTicketing untuk pengambilan nomor antrian, dan ENDSurvey untuk survey kepuasan pelanggan setelah pelayanan. Terintegrasi dengan database MySQL dan website sebagai laporan.",
+    "description": "Rangkaian aplikasi sistem antrian berbasis Android untuk instansi: ENDCaller memanggil nomor antrian, ENDDisplay menampilkan nomor di layar counter, ENDTicketing untuk pengambilan nomor antrian, dan ENDSurvey untuk survey kepuasan pelanggan setelah pelayanan. Terintegrasi dengan database MySQL dan website (PHP) untuk laporan antrian.",
     "techStack": [
       "Kotlin",
       "XML",
@@ -153,9 +159,9 @@
       "Git"
     ],
     "images": [
-        "images/portfolio/duniawisata-1.png",
-        "images/portfolio/duniawisata-2.png",
-        "images/portfolio/duniawisata-3.png"
+      "images/portfolio/duniawisata-1.png",
+      "images/portfolio/duniawisata-2.png",
+      "images/portfolio/duniawisata-3.png"
     ],
     "category": "Enterprise",
     "period": "2019 - 2020",
@@ -172,9 +178,9 @@
       "API Development"
     ],
     "images": [
-        "images/portfolio/yankes-1.png",
-        "images/portfolio/yankes-2.png",
-        "images/portfolio/yankes-3.png"
+      "images/portfolio/yankes-1.png",
+      "images/portfolio/yankes-2.png",
+      "images/portfolio/yankes-3.png"
     ],
     "category": "Academic",
     "period": "2018",
@@ -183,7 +189,7 @@
   },
   {
     "title": "Sistem Informasi Dinas Pariwisata Kota Batu",
-    "description": "Website sistem informasi yang menampilkan destinasi wisata, acara, berita, kuliner, dan budaya Kota Batu. Dikerjakan bersama tim.",
+    "description": "Website sistem informasi yang menampilkan destinasi wisata, acara, berita, kuliner, dan budaya Kota Batu. Dikerjakan saat magang bersama tim.",
     "techStack": [
       "PHP",
       "Web Development",
